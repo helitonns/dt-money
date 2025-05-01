@@ -106,6 +106,14 @@ export const TransactionTypeButton = styled(
     transition: backgound-color 0.2s;
   }
 
+  &[data-state="unchecked"]:active {
+    box-shadow: 0 0 0 2px
+      ${(props) =>
+        props.variant === "income"
+          ? props.theme["green-500"]
+          : props.theme["red-500"]};
+  }
+
   &[data-state="checked"] {
     color: ${(props) => props.theme.white};
     background: ${(props) =>
