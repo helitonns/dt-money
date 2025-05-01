@@ -6,7 +6,7 @@
       "type": "income",
       "category": "Venda",
       "price": 14000,
-      "createAt": "2025-05-01T14:22:34.1000"
+      "createAt": "2025-05-01"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "type": "outcome",
       "category": "Alimentação",
       "price": 40,
-      "createAt": "2025-04-30T14:2:34.1000"
+      "createAt": "2025-04-30"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "type": "income",
       "category": "Trabalho",
       "price": 10000,
-      "createAt": "2025-04-30T14:2:34.1000"
+      "createAt": "2025-04-30"
     },
     {
       "id": 4,
@@ -30,7 +30,7 @@
       "type": "outcome",
       "category": "Moradia",
       "price": 2000,
-      "createAt": "2025-04-30T14:2:34.1000"
+      "createAt": "2025-04-30"
     }
   ]
 }
