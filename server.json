@@ -6,7 +6,7 @@
       "type": "income",
       "category": "Venda",
       "price": 14000,
-      "createAt": "2025-05-01"
+      "createdAt": "2025-04-01"
     },
     {
       "id": 2,
@@ -14,7 +14,7 @@
       "type": "outcome",
       "category": "Alimentação",
       "price": 40,
-      "createAt": "2025-04-30"
+      "createdAt": "2025-04-02"
     },
     {
       "id": 3,
@@ -22,7 +22,7 @@
       "type": "income",
       "category": "Trabalho",
       "price": 10000,
-      "createAt": "2025-04-30"
+      "createdAt": "2025-04-03"
     },
     {
       "id": 4,
@@ -30,7 +30,31 @@
       "type": "outcome",
       "category": "Moradia",
       "price": 2000,
-      "createAt": "2025-04-30"
+      "createdAt": "2025-04-04"
+    },
+    {
+      "id": 5,
+      "description": "Dividendos",
+      "price": 123,
+      "category": "Investimento",
+      "type": "income",
+      "createdAt": "2025-04-05"
+    },
+    {
+      "description": "Almoco",
+      "price": 25,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2025-05-02T19:34:41.396Z",
+      "id": 6
+    },
+    {
+      "description": "Almoco",
+      "price": 23,
+      "category": "Alimentação",
+      "type": "outcome",
+      "createdAt": "2025-05-02T19:45:00.485Z",
+      "id": 7
     }
   ]
 }
