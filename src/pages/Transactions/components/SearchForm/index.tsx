@@ -1,10 +1,10 @@
-import { MagnifyingGlass } from "phosphor-react";
-import { SearchFormContainer } from "./styles";
-import { useForm } from "react-hook-form";
-import * as zod from "zod";
 import { zodResolver } from "@hookform/resolvers/zod/src/zod.js";
-import { useContext } from "react";
+import { MagnifyingGlass } from "phosphor-react";
+import { useForm } from "react-hook-form";
+import { useContextSelector } from "use-context-selector";
+import * as zod from "zod";
 import { TransactionsContext } from "../../../../contexts/TransactionsContext";
+import { SearchFormContainer } from "./styles";
 
 const searchFormSchema = zod.object({
   query: zod.string()
@@ -12,8 +12,10 @@ const searchFormSchema = zod.object({
 
 type SearchFormInputs = zod.infer<typeof searchFormSchema>;
 
-export function SearchForm(){
-  const {fetchTransactions} = useContext(TransactionsContext);
+export function SearchFormComponent(){
+  const fetchTransactions = useContextSelector(TransactionsContext, (context)=> {
+    return context.fetchTransactions
+  });
   const { register, handleSubmit, formState: {isSubmitting} } = useForm<SearchFormInputs>({
     resolver: zodResolver(searchFormSchema)
   });
@@ -37,3 +39,8 @@ export function SearchForm(){
     </SearchFormContainer>
   );
 }
+
+//Só vale a penaa usar o memo em componentes complexo
+//porque o tempo de comparacao em componentes simple
+//pode ser maior do que simplesmente renderiza-lo de novo
+//export const SearchForm = memo(SearchFormComponent);
